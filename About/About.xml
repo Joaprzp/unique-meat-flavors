@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Unique Meat Flavors</name>
+  <author>Joa</author>
+  <packageId>joa.uniquemeatflavors</packageId>
+  <url>https://github.com/joa/unique-meat-flavors</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Each new game randomly assigns a flavor to every animal species in the world (including modded animals). When a colonist eats meat — raw or cooked — they get an extra mood thought based on the flavor of the species the meat came from. Flavors are re-rolled in every new save: in one game chicken might be a delicacy and Thrumbo meat bland; in the next, the opposite. Saved per-game, so your assignments stick across reloads. Compatible with Zetrith's Multiplayer.
+
+---
+
+Cada partida nueva, el mod asigna aleatoriamente un sabor a cada especie animal del mundo (incluyendo animales de otros mods). Cuando un colonista come carne — cruda o cocinada — recibe un thought de humor extra según el sabor de la especie de la que provenía la carne. Los sabores se re-randomizan en cada partida nueva: en una el pollo puede ser una delicia y la carne de Thrumbo insípida; en la siguiente, al revés. Se guarda por partida, así que las asignaciones se mantienen al recargar. Compatible con el mod Multiplayer de Zetrith.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+</ModMetaData>

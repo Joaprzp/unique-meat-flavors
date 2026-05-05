@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <RootNamespace>UniqueMeatFlavors</RootNamespace>
+    <AssemblyName>UniqueMeatFlavors</AssemblyName>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+
+    <!-- Drop the built DLL straight into the mod's Assemblies/ folder. -->
+    <OutputPath>..\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+
+    <!-- We don't ship NuGet dependency DLLs — RimWorld provides Assembly-CSharp
+         at runtime, and Harmony is pulled in by the brrainz.harmony mod. -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <Deterministic>true</Deterministic>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- RimWorld 1.6 reference assemblies (Assembly-CSharp + Unity bits). -->
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*" PrivateAssets="all" />
+    <!-- Harmony patching library. PrivateAssets=all so we don't ship a copy. -->
+    <PackageReference Include="Lib.Harmony" Version="2.3.*" PrivateAssets="all" />
+    <!-- Lets us target net472 without the .NET Framework 4.7.2 developer pack. -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

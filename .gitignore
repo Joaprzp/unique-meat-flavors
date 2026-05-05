@@ -1,0 +1,26 @@
+# Build output
+bin/
+obj/
+
+# Rider / VS / VS Code
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Steam Workshop (generated on publish, do not commit initially)
+About/PublishedFileId.txt
+
+# NuGet
+*.nupkg
+.nuget/
+
+# NOTE: Assemblies/ is intentionally tracked — the built DLL is the
+# distributable artifact that ships with the mod folder.
