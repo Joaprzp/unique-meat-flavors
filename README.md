@@ -2,7 +2,7 @@
 
 > Every animal species in RimWorld gets a randomized flavor each new save. Cooking and eating that meat now means a little more — for better or worse.
 
-<!-- TODO: header screenshot or GIF -->
+![Megavole meat showing "Flavor: Exquisite" in its inspect panel](docs/screenshots/inspect-flavor.png)
 
 ## What it does
 
@@ -20,6 +20,8 @@ When a colonist eats that meat — raw, butchered, or as part of a meal — they
 
 The distribution is bell-shaped and centered on **Common**, with the extremes rare. Assignments live with the save: a Thrumbo that's exquisite in one playthrough might be bland in the next.
 
+![Mood breakdown showing the "Ate exquisite meat" thought stacking on a colonist](docs/screenshots/mood-thought.png)
+
 ## Features
 
 - **Per-save randomization** — fresh roll every new world.
@@ -29,9 +31,6 @@ The distribution is bell-shaped and centered on **Common**, with the extremes ra
 - **Meals with mixed meat** average flavor across their meat ingredients (non-meat ingredients are ignored).
 - **Bilingual: English / Spanish.**
 - **Multiplayer compatible** with [Zetrith's Multiplayer](https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745). Settings are host-authoritative, re-rolls and toggles propagate to all clients.
-
-<!-- TODO: screenshot — meat inspect string showing "Flavor: Exquisite" -->
-<!-- TODO: screenshot — colonist mood breakdown with the flavor thought -->
 
 ## Install
 
@@ -53,8 +52,6 @@ The distribution is bell-shaped and centered on **Common**, with the extremes ra
 - **Re-roll all flavors** — reassigns every meat flavor in the current save. Confirmation gated.
 
 With no save loaded the menu edits defaults for new games. With a save loaded it edits that save's per-game values (which the host owns in multiplayer).
-
-<!-- TODO: screenshot — mod settings menu -->
 
 ## Compatibility
 
