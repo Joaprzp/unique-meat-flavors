@@ -1,0 +1,131 @@
+Steam Workshop description (paste into the description box on the
+Workshop page after uploading the mod). Steam supports a subset of
+BBCode — the tags below render correctly there.
+
+The mod's About.xml ships a plain-text version of the same content
+for the in-game mod manager.
+
+================================================================
+                    BEGIN WORKSHOP DESCRIPTION
+================================================================
+
+[h1]Unique Meat Flavors[/h1]
+
+Every new game randomly assigns a flavor to each animal species in your world — vanilla, DLC, and modded animals included. When a colonist eats meat (raw or in a meal), they gain an extra mood thought based on the species' flavor.
+
+[b]Five tiers:[/b]
+[list]
+[*][b]Bland[/b] – mood -3
+[*][b]Common[/b] – silent (most species)
+[*][b]Tasty[/b] – mood +2
+[*][b]Delicious[/b] – mood +4
+[*][b]Exquisite[/b] – mood +6
+[/list]
+
+The distribution is centered on [b]Common[/b], with rare extremes. Flavors are saved per game, so a Thrumbo that's exquisite in one playthrough might be bland in the next.
+
+[h1]Features[/h1]
+[list]
+[*]Per-save randomization
+[*]Inspect strings show the flavor on every meat stack
+[*]Meals with mixed meat average their flavors (non-meat ingredients ignored)
+[*]Vanilla, DLC, and modded animals all supported
+[*]Mid-campaign safe — add an animal mod later, its meats get flavors at next load
+[*]Bilingual: English / Spanish
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745]Multiplayer[/url] compatible — settings are host-authoritative, re-rolls and toggles sync to all clients
+[/list]
+
+[h1]Settings[/h1]
+[list]
+[*][b]Cosmetic-only mode[/b] – flavors still randomize and show on inspect strings, but eating doesn't generate mood thoughts.
+[*][b]Magnitude multiplier[/b] – 0.5× / 1× / 2×, applies forward to newly-gained thoughts.
+[*][b]Re-roll all flavors[/b] – reassigns every flavor in the current save (confirmation gated).
+[/list]
+
+[h1]Compatibility[/h1]
+[list]
+[*]RimWorld 1.6 + all vanilla DLCs (Royalty, Ideology, Biotech, Anomaly, Odyssey)
+[*]Animal mods that follow the standard meatDef pattern (Vanilla Animals Expanded, Alpha Animals, Megafauna, etc.)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] – required dependency
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745]Multiplayer[/url] – optional, fully synced if present
+[*]Save-game safe — adding or removing the mod doesn't break existing saves
+[/list]
+
+[h1]Source & contributing[/h1]
+
+Source on GitHub: [url=https://github.com/Joaprzp/unique-meat-flavors]github.com/Joaprzp/unique-meat-flavors[/url]
+Bug reports, translations, and PRs welcome. License: MIT.
+
+[b]------------------------------------------------------------[/b]
+
+[h1]Sabores Únicos de Carne (Español)[/h1]
+
+Cada partida nueva asigna aleatoriamente un sabor a cada especie animal de tu mundo — vanilla, DLCs y mods incluidos. Cuando un colonista come carne (cruda o en un meal), recibe un thought extra de humor según el sabor de la especie.
+
+[b]Cinco niveles:[/b]
+[list]
+[*][b]Insípido[/b] – humor -3
+[*][b]Común[/b] – silencioso (la mayoría de especies)
+[*][b]Sabroso[/b] – humor +2
+[*][b]Delicioso[/b] – humor +4
+[*][b]Exquisito[/b] – humor +6
+[/list]
+
+La distribución está centrada en [b]Común[/b], con extremos raros. Los sabores se guardan por partida, así que un Thrumbo exquisito en una partida puede ser insípido en la siguiente.
+
+[h1]Características[/h1]
+[list]
+[*]Re-randomización en cada partida nueva
+[*]Inspect strings muestran el sabor en cada stack de carne
+[*]Meals con carnes mezcladas promedian sus sabores (los ingredientes no-carne se ignoran)
+[*]Vanilla, DLCs y mods de animales — todos soportados
+[*]Seguro mid-campaign — agregá un mod de animales después y sus carnes obtienen sabor en el próximo load
+[*]Bilingüe: Inglés / Español
+[*]Compatible con [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745]Multiplayer[/url] — los settings los manda el host, re-rolls y toggles se sincronizan a todos los clientes
+[/list]
+
+[h1]Configuración[/h1]
+[list]
+[*][b]Modo solo cosmético[/b] – los sabores se randomizan y se ven en el inspect, pero comer no genera thoughts de humor.
+[*][b]Multiplicador de magnitud[/b] – 0.5× / 1× / 2×, se aplica a thoughts que se ganan a partir del cambio.
+[*][b]Re-randomizar todos los sabores[/b] – reasigna todos los sabores de la partida (con confirmación).
+[/list]
+
+[h1]Compatibilidad[/h1]
+[list]
+[*]RimWorld 1.6 + todos los DLCs vanilla (Royalty, Ideology, Biotech, Anomaly, Odyssey)
+[*]Mods de animales que siguen el patrón estándar de meatDef (Vanilla Animals Expanded, Alpha Animals, Megafauna, etc.)
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] – dependencia requerida
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745]Multiplayer[/url] – opcional, totalmente sincronizado si está presente
+[*]Seguro al guardar — agregar o quitar el mod no rompe partidas existentes
+[/list]
+
+[h1]Código y contribuciones[/h1]
+
+Código fuente en GitHub: [url=https://github.com/Joaprzp/unique-meat-flavors]github.com/Joaprzp/unique-meat-flavors[/url]
+Bug reports, traducciones y PRs bienvenidos. Licencia: MIT.
+
+================================================================
+                     END WORKSHOP DESCRIPTION
+================================================================
+
+NOTES FOR PUBLISHING:
+
+- Steam Workshop title (max ~100 chars, will appear at the top):
+    Unique Meat Flavors
+
+- Suggested tags (Steam dropdown when uploading):
+    Mood, Animal, Cooking, 1.6
+
+- Preview image (640×360) goes at About/Preview.png. Steam pulls it
+  from the upload automatically.
+
+- The description above is what to paste into the Workshop page's
+  description box. The About.xml description is what RimWorld's
+  upload tool puts there initially — it'll already be there in
+  plain text, but pasting the BBCode version replaces it with the
+  richer formatted version.
+
+- After publishing, RimWorld writes About/PublishedFileId.txt with
+  the Workshop file ID. That file is gitignored so your local copy
+  stays clean of personal Steam IDs.

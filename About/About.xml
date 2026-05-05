@@ -7,11 +7,51 @@
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
-  <description>Each new game randomly assigns a flavor to every animal species in the world (including modded animals). When a colonist eats meat — raw or cooked — they get an extra mood thought based on the flavor of the species the meat came from. Flavors are re-rolled in every new save: in one game chicken might be a delicacy and Thrumbo meat bland; in the next, the opposite. Saved per-game, so your assignments stick across reloads. Compatible with Zetrith's Multiplayer.
+  <description>Every new game randomly assigns a flavor to each animal species in your world — vanilla, DLC, and modded animals included. When a colonist eats meat (raw or in a meal), they gain an extra mood thought based on the species' flavor.
 
----
+Five tiers: Bland (-3), Common (silent), Tasty (+2), Delicious (+4), Exquisite (+6). The distribution is centered on Common, so most species are unremarkable and the extremes are rare. Flavors are saved per game — a Thrumbo that's exquisite in one playthrough might be bland in the next.
 
-Cada partida nueva, el mod asigna aleatoriamente un sabor a cada especie animal del mundo (incluyendo animales de otros mods). Cuando un colonista come carne — cruda o cocinada — recibe un thought de humor extra según el sabor de la especie de la que provenía la carne. Los sabores se re-randomizan en cada partida nueva: en una el pollo puede ser una delicia y la carne de Thrumbo insípida; en la siguiente, al revés. Se guarda por partida, así que las asignaciones se mantienen al recargar. Compatible con el mod Multiplayer de Zetrith.</description>
+FEATURES
+- Per-save randomization
+- Inspect strings on meat stacks show the flavor
+- Meals with mixed meat average their flavors (non-meat ingredients ignored)
+- Modded animals supported — any meatDef gets a flavor automatically
+- Mid-campaign safe — add an animal mod later and its meats get flavors on next load
+- Bilingual: English / Spanish
+- Multiplayer compatible (Zetrith's Multiplayer): host-authoritative settings, synced re-rolls
+
+SETTINGS
+- Cosmetic-only mode (mood off, flavors still visible)
+- Mood magnitude multiplier: 0.5x / 1x / 2x
+- Re-roll all flavors button
+
+Source: github.com/Joaprzp/unique-meat-flavors
+License: MIT.
+Required: Harmony.
+
+---------- Español ----------
+
+Cada partida nueva asigna aleatoriamente un sabor a cada especie animal de tu mundo — vanilla, DLCs y mods incluidos. Cuando un colonista come carne (cruda o en un meal), recibe un thought extra de humor según el sabor de la especie.
+
+Cinco niveles: Insípido (-3), Común (silencioso), Sabroso (+2), Delicioso (+4), Exquisito (+6). La distribución está centrada en Común, así que la mayoría de las especies son intermedias y los extremos son raros. Los sabores se guardan por partida: un Thrumbo exquisito en una partida puede ser insípido en la siguiente.
+
+CARACTERÍSTICAS
+- Re-randomización en cada partida
+- Inspect strings muestran el sabor en cada stack de carne
+- Meals con carnes mezcladas promedian sus sabores (los ingredientes no-carne se ignoran)
+- Soporta mods de animales — cualquier meatDef recibe sabor automáticamente
+- Seguro mid-campaign — agregá un mod de animales después y sus carnes reciben sabor en el próximo load
+- Bilingüe: Inglés / Español
+- Compatible con Multiplayer (Zetrith): settings host-authoritative, re-rolls sincronizados
+
+CONFIGURACIÓN
+- Modo solo cosmético (sin humor, sabores siguen visibles)
+- Multiplicador de magnitud: 0.5x / 1x / 2x
+- Botón de re-randomizar todos los sabores
+
+Código: github.com/Joaprzp/unique-meat-flavors
+Licencia: MIT.
+Requerido: Harmony.</description>
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>
