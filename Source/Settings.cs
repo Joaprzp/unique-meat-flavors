@@ -9,29 +9,36 @@ namespace UniqueMeatFlavors
         Double = 2,
     }
 
-    public class UniqueMeatFlavorsSettings : ModSettings
+    public static class MoodMultiplierOptionExtensions
     {
-        public bool moodEffectsEnabled = true;
-        public MoodMultiplierOption moodMultiplier = MoodMultiplierOption.Full;
-
-        public float MoodMultiplierValue
+        public static float MultiplierValue(this MoodMultiplierOption option)
         {
-            get
+            switch (option)
             {
-                switch (moodMultiplier)
-                {
-                    case MoodMultiplierOption.Half:   return 0.5f;
-                    case MoodMultiplierOption.Double: return 2f;
-                    default:                          return 1f;
-                }
+                case MoodMultiplierOption.Half:   return 0.5f;
+                case MoodMultiplierOption.Double: return 2f;
+                default:                          return 1f;
             }
         }
+    }
+
+    // Per-client defaults used to seed a new save's per-save values
+    // (FlavorGameComponent.moodEffectsEnabled / moodMultiplier). Once a save
+    // is loaded, the in-game settings UI edits the per-save values directly,
+    // not these — that way the host's choices are authoritative in
+    // multiplayer (the FlavorGameComponent travels with the save).
+    public class UniqueMeatFlavorsSettings : ModSettings
+    {
+        public bool defaultMoodEffectsEnabled = true;
+        public MoodMultiplierOption defaultMoodMultiplier = MoodMultiplierOption.Full;
 
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look(ref moodEffectsEnabled, "moodEffectsEnabled", true);
-            Scribe_Values.Look(ref moodMultiplier, "moodMultiplier", MoodMultiplierOption.Full);
+            // Field names in the saved XML are stable across the rework so
+            // existing players don't lose their previously chosen values.
+            Scribe_Values.Look(ref defaultMoodEffectsEnabled, "moodEffectsEnabled", true);
+            Scribe_Values.Look(ref defaultMoodMultiplier, "moodMultiplier", MoodMultiplierOption.Full);
         }
     }
 }

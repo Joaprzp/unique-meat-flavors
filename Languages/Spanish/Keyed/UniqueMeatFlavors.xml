@@ -12,6 +12,8 @@
   <UMF.Flavor.Exquisite>Exquisito</UMF.Flavor.Exquisite>
 
   <!-- UI de configuración del mod. -->
+  <UMF.Settings.HeaderInGame>Editando los valores de la partida cargada. En multiplayer, los cambios afectan a todos los jugadores.</UMF.Settings.HeaderInGame>
+  <UMF.Settings.HeaderDefaults>Editando los valores por defecto para partidas nuevas. Cargá una partida para editar los valores específicos del save.</UMF.Settings.HeaderDefaults>
   <UMF.Settings.MoodEffectsEnabled>Habilitar efectos de humor</UMF.Settings.MoodEffectsEnabled>
   <UMF.Settings.MoodEffectsEnabledTooltip>Si está desactivado, el mod sigue randomizando sabores por partida y los muestra en el inspect de los stacks de carne, pero comer carne no agrega ningún thought de humor. Modo solo cosmético.</UMF.Settings.MoodEffectsEnabledTooltip>
   <UMF.Settings.MoodMultiplier>Multiplicador de magnitud de humor</UMF.Settings.MoodMultiplier>

@@ -22,5 +22,10 @@ Cada partida nueva, el mod asigna aleatoriamente un sabor a cada especie animal 
   </modDependencies>
   <loadAfter>
     <li>brrainz.harmony</li>
+    <!-- Soft hints. These mods are NOT required for the mod to work; they
+         only need to load before us when present, so MP's sync system is
+         initialized before our HarmonyInit calls MP.RegisterAll. -->
+    <li>zetrith.prepatcher</li>
+    <li>rwmt.Multiplayer</li>
   </loadAfter>
 </ModMetaData>

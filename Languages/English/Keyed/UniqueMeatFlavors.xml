@@ -12,6 +12,8 @@
   <UMF.Flavor.Exquisite>Exquisite</UMF.Flavor.Exquisite>
 
   <!-- Mod settings UI. -->
+  <UMF.Settings.HeaderInGame>Editing settings for the loaded save. In multiplayer, changes apply to all players.</UMF.Settings.HeaderInGame>
+  <UMF.Settings.HeaderDefaults>Editing default values for new games. Load a save to edit per-save settings.</UMF.Settings.HeaderDefaults>
   <UMF.Settings.MoodEffectsEnabled>Enable mood effects</UMF.Settings.MoodEffectsEnabled>
   <UMF.Settings.MoodEffectsEnabledTooltip>If off, the mod still randomizes flavors per save and shows them on the inspect string of meat stacks, but eating meat won't add any flavor mood thought. Cosmetic-only mode.</UMF.Settings.MoodEffectsEnabledTooltip>
   <UMF.Settings.MoodMultiplier>Mood magnitude multiplier</UMF.Settings.MoodMultiplier>

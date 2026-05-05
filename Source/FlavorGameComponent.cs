@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Linq;
+using Multiplayer.API;
 using RimWorld;
 using Verse;
 
@@ -10,10 +10,26 @@ namespace UniqueMeatFlavors
         private Dictionary<ThingDef, FlavorCategory> meatFlavors
             = new Dictionary<ThingDef, FlavorCategory>();
 
+        // Per-save gameplay settings. Defaults are seeded from ModSettings
+        // on StartedNewGame; otherwise loaded from the save. Edited via the
+        // [SyncMethod] setters below so changes propagate to all clients in
+        // multiplayer (the save travels with the host, so the host's values
+        // are authoritative by construction).
+        private bool moodEffectsEnabled = true;
+        private MoodMultiplierOption moodMultiplier = MoodMultiplierOption.Full;
+
         public FlavorGameComponent(Game game) { }
+
+        public bool MoodEffectsEnabled => moodEffectsEnabled;
+        public MoodMultiplierOption MoodMultiplier => moodMultiplier;
+        public float MoodMultiplierValue => moodMultiplier.MultiplierValue();
+        public IReadOnlyDictionary<ThingDef, FlavorCategory> AllFlavors => meatFlavors;
 
         public override void StartedNewGame()
         {
+            var defaults = UniqueMeatFlavorsMod.Settings;
+            moodEffectsEnabled = defaults?.defaultMoodEffectsEnabled ?? true;
+            moodMultiplier = defaults?.defaultMoodMultiplier ?? MoodMultiplierOption.Full;
             AssignMissingFlavors();
         }
 
@@ -31,6 +47,8 @@ namespace UniqueMeatFlavors
                 "meatFlavors",
                 LookMode.Def,
                 LookMode.Value);
+            Scribe_Values.Look(ref moodEffectsEnabled, "moodEffectsEnabled", true);
+            Scribe_Values.Look(ref moodMultiplier, "moodMultiplier", MoodMultiplierOption.Full);
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit && meatFlavors == null)
             {
@@ -46,7 +64,25 @@ namespace UniqueMeatFlavors
                 : FlavorCategory.Common;
         }
 
-        public IReadOnlyDictionary<ThingDef, FlavorCategory> AllFlavors => meatFlavors;
+        [SyncMethod]
+        public void SetMoodEffectsEnabled(bool value)
+        {
+            moodEffectsEnabled = value;
+        }
+
+        [SyncMethod]
+        public void SetMoodMultiplier(MoodMultiplierOption value)
+        {
+            moodMultiplier = value;
+        }
+
+        [SyncMethod]
+        public void RerollAll()
+        {
+            meatFlavors.Clear();
+            AssignMissingFlavors();
+            Log.Message("[Unique Meat Flavors] Re-rolled all flavors.");
+        }
 
         private void AssignMissingFlavors()
         {
@@ -65,13 +101,6 @@ namespace UniqueMeatFlavors
                     $"[Unique Meat Flavors] Assigned flavors to {added} meat def(s) " +
                     $"(total tracked: {meatFlavors.Count}).");
             }
-        }
-
-        public void RerollAll()
-        {
-            meatFlavors.Clear();
-            AssignMissingFlavors();
-            Log.Message("[Unique Meat Flavors] Re-rolled all flavors.");
         }
     }
 }

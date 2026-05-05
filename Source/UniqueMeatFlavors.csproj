@@ -12,9 +12,13 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 
-    <!-- We don't ship NuGet dependency DLLs — RimWorld provides Assembly-CSharp
-         at runtime, and Harmony is pulled in by the brrainz.harmony mod. -->
-    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <!-- Most NuGet dependency DLLs are NOT shipped — RimWorld provides
+         Assembly-CSharp at runtime, Harmony is provided by the brrainz.harmony
+         mod, and the .NET Framework 4.7.2 reference assemblies are compile-only
+         (all marked PrivateAssets=all below). The MultiplayerAPI DLL IS shipped
+         (Assemblies/0MultiplayerAPI.dll) because it provides the no-op stubs
+         that let our code run when the Multiplayer mod isn't loaded. -->
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
@@ -25,12 +29,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- RimWorld 1.6 reference assemblies (Assembly-CSharp + Unity bits). -->
-    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*" PrivateAssets="all" />
-    <!-- Harmony patching library. PrivateAssets=all so we don't ship a copy. -->
-    <PackageReference Include="Lib.Harmony" Version="2.3.*" PrivateAssets="all" />
-    <!-- Lets us target net472 without the .NET Framework 4.7.2 developer pack. -->
+    <!-- RimWorld 1.6 reference assemblies (Assembly-CSharp + Unity bits).
+         ExcludeAssets=runtime keeps the DLL out of our shipped Assemblies/. -->
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*" PrivateAssets="all" ExcludeAssets="runtime" />
+    <!-- Harmony patching library. We don't ship 0Harmony.dll — it's provided
+         at runtime by the brrainz.harmony mod (declared as a dependency). -->
+    <PackageReference Include="Lib.Harmony" Version="2.3.*" PrivateAssets="all" ExcludeAssets="runtime" />
+    <!-- Lets us target net472 without the .NET Framework 4.7.2 developer pack.
+         Compile-time only, no runtime artifact. -->
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <!-- Zetrith's Multiplayer API. Thin facade — when MP isn't loaded
+         MP.IsInMultiplayer returns false and our [SyncMethod] attributes are
+         no-ops, so this adds no hard dependency for SP players. We DO ship
+         this DLL (0MultiplayerAPI.dll) because the no-op stubs need to be
+         present at load time even without the full Multiplayer mod. -->
+    <PackageReference Include="RimWorld.MultiplayerAPI" Version="0.6.0" />
   </ItemGroup>
 
 </Project>
