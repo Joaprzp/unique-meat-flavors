@@ -11,8 +11,10 @@ obj/
 *.userosscache
 *.sln.docstates
 
-# Claude Code per-user state
+# Claude Code state and project-instruction files (kept locally, not
+# distributed in the public repo).
 .claude/
+CLAUDE.md
 
 # OS
 Thumbs.db
