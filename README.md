@@ -35,8 +35,7 @@ The distribution is bell-shaped and centered on **Common**, with the extremes ra
 ## Install
 
 ### Steam Workshop (recommended)
-<!-- TODO: replace with Workshop link once published -->
-*Workshop link coming once published.*
+[Subscribe on the Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3720670314).
 
 ### Manual
 1. Download the latest release from the [Releases page](https://github.com/Joaprzp/unique-meat-flavors/releases).
