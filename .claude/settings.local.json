@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell($code = Get-Content -Raw 'C:\\\\code\\\\unique-meat-flavors\\\\inspect.ps1'; powershell.exe -Version 5.1 -NoProfile -Command $code)"
-    ]
-  }
-}

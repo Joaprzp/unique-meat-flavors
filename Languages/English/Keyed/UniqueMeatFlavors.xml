@@ -11,4 +11,16 @@
   <UMF.Flavor.Delicious>Delicious</UMF.Flavor.Delicious>
   <UMF.Flavor.Exquisite>Exquisite</UMF.Flavor.Exquisite>
 
+  <!-- Mod settings UI. -->
+  <UMF.Settings.MoodEffectsEnabled>Enable mood effects</UMF.Settings.MoodEffectsEnabled>
+  <UMF.Settings.MoodEffectsEnabledTooltip>If off, the mod still randomizes flavors per save and shows them on the inspect string of meat stacks, but eating meat won't add any flavor mood thought. Cosmetic-only mode.</UMF.Settings.MoodEffectsEnabledTooltip>
+  <UMF.Settings.MoodMultiplier>Mood magnitude multiplier</UMF.Settings.MoodMultiplier>
+  <UMF.Settings.MoodMultiplier.Half>0.5× (subtle)</UMF.Settings.MoodMultiplier.Half>
+  <UMF.Settings.MoodMultiplier.Full>1× (default)</UMF.Settings.MoodMultiplier.Full>
+  <UMF.Settings.MoodMultiplier.Double>2× (intense)</UMF.Settings.MoodMultiplier.Double>
+  <UMF.Settings.RerollSection>Save data</UMF.Settings.RerollSection>
+  <UMF.Settings.RerollButton>Re-roll all flavors</UMF.Settings.RerollButton>
+  <UMF.Settings.RerollConfirmText>This will reassign every meat flavor in the current save. Existing flavor mood thoughts on colonists are not removed, but new ones will use the new assignments. Continue?</UMF.Settings.RerollConfirmText>
+  <UMF.Settings.RerollNoGame>Load a save first to re-roll its flavor assignments.</UMF.Settings.RerollNoGame>
+
 </LanguageData>

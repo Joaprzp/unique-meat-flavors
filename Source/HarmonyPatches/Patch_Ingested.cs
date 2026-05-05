@@ -18,6 +18,10 @@ namespace UniqueMeatFlavors.HarmonyPatches
         {
             if (ingester?.needs?.mood?.thoughts?.memories == null) return;
 
+            // Cosmetic-only mode: flavors still randomize and show on
+            // inspect strings, but eating doesn't generate a mood thought.
+            if (UniqueMeatFlavorsMod.Settings?.moodEffectsEnabled == false) return;
+
             var game = Current.Game;
             if (game == null) return;
 

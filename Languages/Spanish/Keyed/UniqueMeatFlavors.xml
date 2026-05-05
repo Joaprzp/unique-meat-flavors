@@ -11,4 +11,16 @@
   <UMF.Flavor.Delicious>Delicioso</UMF.Flavor.Delicious>
   <UMF.Flavor.Exquisite>Exquisito</UMF.Flavor.Exquisite>
 
+  <!-- UI de configuración del mod. -->
+  <UMF.Settings.MoodEffectsEnabled>Habilitar efectos de humor</UMF.Settings.MoodEffectsEnabled>
+  <UMF.Settings.MoodEffectsEnabledTooltip>Si está desactivado, el mod sigue randomizando sabores por partida y los muestra en el inspect de los stacks de carne, pero comer carne no agrega ningún thought de humor. Modo solo cosmético.</UMF.Settings.MoodEffectsEnabledTooltip>
+  <UMF.Settings.MoodMultiplier>Multiplicador de magnitud de humor</UMF.Settings.MoodMultiplier>
+  <UMF.Settings.MoodMultiplier.Half>0.5× (sutil)</UMF.Settings.MoodMultiplier.Half>
+  <UMF.Settings.MoodMultiplier.Full>1× (por defecto)</UMF.Settings.MoodMultiplier.Full>
+  <UMF.Settings.MoodMultiplier.Double>2× (intenso)</UMF.Settings.MoodMultiplier.Double>
+  <UMF.Settings.RerollSection>Datos de la partida</UMF.Settings.RerollSection>
+  <UMF.Settings.RerollButton>Re-randomizar sabores</UMF.Settings.RerollButton>
+  <UMF.Settings.RerollConfirmText>Esto reasigna todos los sabores de carne en la partida actual. Los thoughts de sabor existentes en los colonistas no se borran, pero los nuevos usarán las nuevas asignaciones. ¿Continuar?</UMF.Settings.RerollConfirmText>
+  <UMF.Settings.RerollNoGame>Cargá una partida primero para re-randomizar sus sabores.</UMF.Settings.RerollNoGame>
+
 </LanguageData>

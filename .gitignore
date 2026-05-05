@@ -11,6 +11,9 @@ obj/
 *.userosscache
 *.sln.docstates
 
+# Claude Code per-user state
+.claude/
+
 # OS
 Thumbs.db
 .DS_Store
