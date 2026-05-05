@@ -27,5 +27,8 @@ About/PublishedFileId.txt
 *.nupkg
 .nuget/
 
+# Release artifacts (built via PowerShell Compress-Archive when cutting a tag)
+*.zip
+
 # NOTE: Assemblies/ is intentionally tracked — the built DLL is the
 # distributable artifact that ships with the mod folder.
