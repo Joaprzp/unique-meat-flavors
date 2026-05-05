@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Stack tuning matches vanilla food thoughts (e.g. AteFineMeal):
+       up to 4 simultaneous stacks with diminishing 0.75 multiplier per
+       additional stack, 1 RimWorld day duration. -->
+
+  <ThoughtDef>
+    <defName>UMF_AteBlandMeat</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>Ate bland meat</label>
+        <description>The meat I had was so flavorless it felt like chewing on rubber.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>UMF_AteTastyMeat</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>Ate tasty meat</label>
+        <description>The meat I had had a nice flavor to it.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>UMF_AteDeliciousMeat</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>Ate delicious meat</label>
+        <description>The meat I had was downright delicious.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>UMF_AteExquisiteMeat</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>Ate exquisite meat</label>
+        <description>The meat I had was an absolute treat. I'll be thinking about it for days.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

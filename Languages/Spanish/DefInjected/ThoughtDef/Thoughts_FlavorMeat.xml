@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <UMF_AteBlandMeat.stages.0.label>Comí carne insípida</UMF_AteBlandMeat.stages.0.label>
+  <UMF_AteBlandMeat.stages.0.description>La carne que comí no tenía nada de sabor. Fue como masticar goma.</UMF_AteBlandMeat.stages.0.description>
+
+  <UMF_AteTastyMeat.stages.0.label>Comí carne sabrosa</UMF_AteTastyMeat.stages.0.label>
+  <UMF_AteTastyMeat.stages.0.description>La carne que comí tenía un sabor agradable.</UMF_AteTastyMeat.stages.0.description>
+
+  <UMF_AteDeliciousMeat.stages.0.label>Comí carne deliciosa</UMF_AteDeliciousMeat.stages.0.label>
+  <UMF_AteDeliciousMeat.stages.0.description>La carne que comí estaba realmente deliciosa.</UMF_AteDeliciousMeat.stages.0.description>
+
+  <UMF_AteExquisiteMeat.stages.0.label>Comí carne exquisita</UMF_AteExquisiteMeat.stages.0.label>
+  <UMF_AteExquisiteMeat.stages.0.description>La carne que comí fue un manjar absoluto. Voy a estar pensándola por días.</UMF_AteExquisiteMeat.stages.0.description>
+
+</LanguageData>
