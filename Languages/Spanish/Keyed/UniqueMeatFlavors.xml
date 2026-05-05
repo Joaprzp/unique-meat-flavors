@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+
+  <!-- Inspect string que aparece en stacks de carne. {0} es el nombre del sabor. -->
+  <UMF.InspectFlavor>Sabor: {0}</UMF.InspectFlavor>
+
+  <!-- Nombres de las categorías de sabor. -->
+  <UMF.Flavor.Bland>Insípido</UMF.Flavor.Bland>
+  <UMF.Flavor.Common>Común</UMF.Flavor.Common>
+  <UMF.Flavor.Tasty>Sabroso</UMF.Flavor.Tasty>
+  <UMF.Flavor.Delicious>Delicioso</UMF.Flavor.Delicious>
+  <UMF.Flavor.Exquisite>Exquisito</UMF.Flavor.Exquisite>
+
 </LanguageData>

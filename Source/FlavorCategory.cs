@@ -1,3 +1,5 @@
+using Verse;
+
 namespace UniqueMeatFlavors
 {
     public enum FlavorCategory
@@ -22,6 +24,11 @@ namespace UniqueMeatFlavors
                 case FlavorCategory.Exquisite: return 6;
                 default: return 0;
             }
+        }
+
+        public static string TranslatedLabel(this FlavorCategory category)
+        {
+            return ("UMF.Flavor." + category.ToString()).Translate();
         }
     }
 }

@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+
+  <!-- Inspect string shown on meat stacks. {0} is the flavor name. -->
+  <UMF.InspectFlavor>Flavor: {0}</UMF.InspectFlavor>
+
+  <!-- Flavor category names. -->
+  <UMF.Flavor.Bland>Bland</UMF.Flavor.Bland>
+  <UMF.Flavor.Common>Common</UMF.Flavor.Common>
+  <UMF.Flavor.Tasty>Tasty</UMF.Flavor.Tasty>
+  <UMF.Flavor.Delicious>Delicious</UMF.Flavor.Delicious>
+  <UMF.Flavor.Exquisite>Exquisite</UMF.Flavor.Exquisite>
+
 </LanguageData>
