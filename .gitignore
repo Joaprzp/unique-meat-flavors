@@ -15,6 +15,7 @@ obj/
 # distributed in the public repo).
 .claude/
 CLAUDE.md
+handoff.md
 
 # OS
 Thumbs.db
