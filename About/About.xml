@@ -11,6 +11,12 @@
 
 Five tiers: Bland (-3), Common (silent), Tasty (+2), Delicious (+4), Exquisite (+6). The distribution is centered on Common, so most species are unremarkable and the extremes are rare. Flavors are saved per game — a Thrumbo that's exquisite in one playthrough might be bland in the next.
 
+WHY THIS EXISTS
+
+This is my first RimWorld mod. I built it because my partner and I play long multiplayer campaigns together, and I wanted something small that adds a bit of personality to the food economy without changing how the game plays.
+
+Multiplayer compatibility was a design constraint from day one, not a patch tacked on later: per-save settings travel with the host, re-rolls and toggles propagate to every client via SyncMethod, all randomization goes through RimWorld's seeded RNG. If you play MP with someone, this should just work.
+
 FEATURES
 - Per-save randomization
 - Inspect strings on meat stacks show the flavor
@@ -18,22 +24,27 @@ FEATURES
 - Modded animals supported — any meatDef gets a flavor automatically
 - Mid-campaign safe — add an animal mod later and its meats get flavors on next load
 - Bilingual: English / Spanish
-- Multiplayer compatible (Zetrith's Multiplayer): host-authoritative settings, synced re-rolls
+- Multiplayer compatible (Zetrith's Multiplayer): host-authoritative settings, fully synced
 
 SETTINGS
 - Cosmetic-only mode (mood off, flavors still visible)
 - Mood magnitude multiplier: 0.5x / 1x / 2x
 - Re-roll all flavors button
 
-Source: github.com/Joaprzp/unique-meat-flavors
-License: MIT.
-Required: Harmony.
+Bug reports and source: github.com/Joaprzp/unique-meat-flavors
+License: MIT. Required: Harmony.
 
 ---------- Español ----------
 
 Cada partida nueva asigna aleatoriamente un sabor a cada especie animal de tu mundo — vanilla, DLCs y mods incluidos. Cuando un colonista come carne (cruda o en un meal), recibe un thought extra de humor según el sabor de la especie.
 
 Cinco niveles: Insípido (-3), Común (silencioso), Sabroso (+2), Delicioso (+4), Exquisito (+6). La distribución está centrada en Común, así que la mayoría de las especies son intermedias y los extremos son raros. Los sabores se guardan por partida: un Thrumbo exquisito en una partida puede ser insípido en la siguiente.
+
+POR QUÉ EXISTE
+
+Este es mi primer mod de RimWorld. Lo hice porque con mi pareja jugamos campañas largas en multiplayer, y quería algo chico que le diera un poco de personalidad a la comida sin cambiar la forma de jugar.
+
+La compatibilidad con multiplayer fue un requisito desde el día uno, no un parche puesto al final: los settings viajan con el host, los re-rolls y los toggles se propagan a todos los clientes vía SyncMethod, y toda la aleatorización pasa por el RNG sincronizado de RimWorld. Si jugás MP con alguien, esto tiene que funcionar.
 
 CARACTERÍSTICAS
 - Re-randomización en cada partida
@@ -42,16 +53,15 @@ CARACTERÍSTICAS
 - Soporta mods de animales — cualquier meatDef recibe sabor automáticamente
 - Seguro mid-campaign — agregá un mod de animales después y sus carnes reciben sabor en el próximo load
 - Bilingüe: Inglés / Español
-- Compatible con Multiplayer (Zetrith): settings host-authoritative, re-rolls sincronizados
+- Compatible con Multiplayer (Zetrith): settings host-authoritative, totalmente sincronizado
 
 CONFIGURACIÓN
 - Modo solo cosmético (sin humor, sabores siguen visibles)
 - Multiplicador de magnitud: 0.5x / 1x / 2x
 - Botón de re-randomizar todos los sabores
 
-Código: github.com/Joaprzp/unique-meat-flavors
-Licencia: MIT.
-Requerido: Harmony.</description>
+Bug reports y código: github.com/Joaprzp/unique-meat-flavors
+Licencia: MIT. Requerido: Harmony.</description>
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>

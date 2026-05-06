@@ -1,6 +1,6 @@
 Steam Workshop description (paste into the description box on the
-Workshop page after uploading the mod). Steam supports a subset of
-BBCode — the tags below render correctly there.
+Workshop page). Steam supports a subset of BBCode — the tags below
+render correctly there.
 
 The mod's About.xml ships a plain-text version of the same content
 for the in-game mod manager.
@@ -24,6 +24,12 @@ Every new game randomly assigns a flavor to each animal species in your world �
 
 The distribution is centered on [b]Common[/b], with rare extremes. Flavors are saved per game, so a Thrumbo that's exquisite in one playthrough might be bland in the next.
 
+[h1]Why this exists[/h1]
+
+This is my first RimWorld mod. I built it because my partner and I play long multiplayer campaigns together, and I wanted something small that adds a bit of personality to the food economy without changing how the game plays.
+
+Multiplayer compatibility was a [b]design constraint from day one[/b], not a patch tacked on later: per-save settings travel with the host, re-rolls and toggles propagate to every client via SyncMethod, all randomization goes through RimWorld's seeded RNG. If you play MP with someone, this should Just Work — that's the whole reason it exists.
+
 [h1]Features[/h1]
 [list]
 [*]Per-save randomization
@@ -32,14 +38,14 @@ The distribution is centered on [b]Common[/b], with rare extremes. Flavors are s
 [*]Vanilla, DLC, and modded animals all supported
 [*]Mid-campaign safe — add an animal mod later, its meats get flavors at next load
 [*]Bilingual: English / Spanish
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745]Multiplayer[/url] compatible — settings are host-authoritative, re-rolls and toggles sync to all clients
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745]Multiplayer[/url] compatible — host-authoritative settings, full SyncMethod coverage
 [/list]
 
 [h1]Settings[/h1]
 [list]
 [*][b]Cosmetic-only mode[/b] – flavors still randomize and show on inspect strings, but eating doesn't generate mood thoughts.
 [*][b]Magnitude multiplier[/b] – 0.5× / 1× / 2×, applies forward to newly-gained thoughts.
-[*][b]Re-roll all flavors[/b] – reassigns every flavor in the current save (confirmation gated).
+[*][b]Re-roll all flavors[/b] – reassigns every flavor in the current save (confirmation gated, syncs to all MP clients).
 [/list]
 
 [h1]Compatibility[/h1]
@@ -51,10 +57,7 @@ The distribution is centered on [b]Common[/b], with rare extremes. Flavors are s
 [*]Save-game safe — adding or removing the mod doesn't break existing saves
 [/list]
 
-[h1]Source & contributing[/h1]
-
-Source on GitHub: [url=https://github.com/Joaprzp/unique-meat-flavors]github.com/Joaprzp/unique-meat-flavors[/url]
-Bug reports, translations, and PRs welcome. License: MIT.
+If you spot a bug or want to suggest something, leave a comment here or open an issue on GitHub: [url=https://github.com/Joaprzp/unique-meat-flavors]github.com/Joaprzp/unique-meat-flavors[/url]. License: MIT.
 
 [b]------------------------------------------------------------[/b]
 
@@ -73,6 +76,12 @@ Cada partida nueva asigna aleatoriamente un sabor a cada especie animal de tu mu
 
 La distribución está centrada en [b]Común[/b], con extremos raros. Los sabores se guardan por partida, así que un Thrumbo exquisito en una partida puede ser insípido en la siguiente.
 
+[h1]Por qué existe[/h1]
+
+Este es mi primer mod de RimWorld. Lo hice porque con mi pareja jugamos campañas largas en multiplayer, y quería algo chico que le diera un poco de personalidad a la comida sin cambiar la forma de jugar.
+
+La compatibilidad con multiplayer fue [b]un requisito desde el día uno[/b], no un parche puesto al final: los settings viajan con el host, los re-rolls y los toggles se propagan a todos los clientes vía SyncMethod, y toda la aleatorización pasa por el RNG sincronizado de RimWorld. Si jugás MP con alguien, esto tiene que funcionar — esa es la razón por la que el mod existe.
+
 [h1]Características[/h1]
 [list]
 [*]Re-randomización en cada partida nueva
@@ -81,14 +90,14 @@ La distribución está centrada en [b]Común[/b], con extremos raros. Los sabore
 [*]Vanilla, DLCs y mods de animales — todos soportados
 [*]Seguro mid-campaign — agregá un mod de animales después y sus carnes obtienen sabor en el próximo load
 [*]Bilingüe: Inglés / Español
-[*]Compatible con [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745]Multiplayer[/url] — los settings los manda el host, re-rolls y toggles se sincronizan a todos los clientes
+[*]Compatible con [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745]Multiplayer[/url] — los settings los manda el host, todos los métodos relevantes pasan por SyncMethod
 [/list]
 
 [h1]Configuración[/h1]
 [list]
 [*][b]Modo solo cosmético[/b] – los sabores se randomizan y se ven en el inspect, pero comer no genera thoughts de humor.
 [*][b]Multiplicador de magnitud[/b] – 0.5× / 1× / 2×, se aplica a thoughts que se ganan a partir del cambio.
-[*][b]Re-randomizar todos los sabores[/b] – reasigna todos los sabores de la partida (con confirmación).
+[*][b]Re-randomizar todos los sabores[/b] – reasigna todos los sabores de la partida (con confirmación, se sincroniza a todos los clientes en MP).
 [/list]
 
 [h1]Compatibilidad[/h1]
@@ -100,10 +109,7 @@ La distribución está centrada en [b]Común[/b], con extremos raros. Los sabore
 [*]Seguro al guardar — agregar o quitar el mod no rompe partidas existentes
 [/list]
 
-[h1]Código y contribuciones[/h1]
-
-Código fuente en GitHub: [url=https://github.com/Joaprzp/unique-meat-flavors]github.com/Joaprzp/unique-meat-flavors[/url]
-Bug reports, traducciones y PRs bienvenidos. Licencia: MIT.
+Si encontrás un bug o querés sugerir algo, dejá un comentario acá o abrí un issue en GitHub: [url=https://github.com/Joaprzp/unique-meat-flavors]github.com/Joaprzp/unique-meat-flavors[/url]. Licencia: MIT.
 
 ================================================================
                      END WORKSHOP DESCRIPTION
@@ -129,3 +135,8 @@ NOTES FOR PUBLISHING:
 - After publishing, RimWorld writes About/PublishedFileId.txt with
   the Workshop file ID. That file is gitignored so your local copy
   stays clean of personal Steam IDs.
+
+- Inline images: Steam BBCode's [img]URL[/img] only renders URLs
+  hosted on Steam's CDN (steamuserimages-a.akamaihd.net). To add
+  images inline, upload them as Steam Screenshots from your profile
+  first, copy the steamuserimages URL, then paste into [img] tags.
